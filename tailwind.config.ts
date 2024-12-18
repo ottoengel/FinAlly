@@ -7,6 +7,9 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  corePlugins: {
+    scrollBehavior: true, // Garante que o `scroll-smooth` está ativo
+  },
   theme: {
     extend: {
       colors: {
