@@ -29,14 +29,14 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
     return "-";
   };
   return (
-    <ScrollArea className="rounded-md border">
+    <ScrollArea className="h-full rounded-md border">
       <CardHeader className="flex-row items-center justify-between">
         <CardTitle className="font-bold">Últimas Transações</CardTitle>
         <Button variant="outline" className="rounded-full font-bold" asChild>
           <Link href="/transactions">Ver mais</Link>
         </Button>
       </CardHeader>
-      <CardContent className="space-y-6">
+      <CardContent className="flex flex-col gap-6">
         {lastTransactions.map((transaction) => (
           <div
             key={transaction.id}
