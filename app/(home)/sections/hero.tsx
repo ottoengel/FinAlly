@@ -2,6 +2,7 @@
 import { ArrowRightIcon } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -33,11 +34,13 @@ const Hero = () => {
               para otimização.
             </p>
             <div className="mt-[30px] flex items-center gap-1">
-              <button className="inline-flex items-center rounded-lg bg-black px-4 py-2 font-medium tracking-tight text-white">
-                Get for Free
-              </button>
+              <Link href="/login">
+                <button className="inline-flex items-center rounded-lg bg-black px-4 py-2 font-medium tracking-tight text-white">
+                  Comece Agora
+                </button>
+              </Link>
               <button className="inline-flex items-center gap-1 rounded-lg bg-transparent px-4 py-2 font-medium tracking-tight text-white">
-                Learn More
+                <a href="#features">Ver Mais</a>
                 <ArrowRightIcon className="h-5 w-5" />
               </button>
             </div>
