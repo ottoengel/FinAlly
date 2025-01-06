@@ -18,7 +18,7 @@ const Footer = () => {
           <a href="#features">Features</a>
           <a href="#price">Preço</a>
         </nav>
-        <p className="mt-6">&copy; 2024 FinAlly, Inc. All rights reserved.</p>
+        <p className="mt-6">&copy; 2025 FinAlly, Inc. All rights reserved.</p>
       </div>
     </footer>
   );

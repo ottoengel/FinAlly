@@ -26,11 +26,11 @@ const ProductShowcase = () => {
         <div className="mx-auto max-w-[540px]">
           <div className="flex justify-center">
             <div className="inline-flex rounded-lg border border-[#5ce65c]/10 px-3 py-1 text-sm tracking-tight">
-              Boost your productivity
+              Eficiência
             </div>
           </div>
           <h2 className="mt-5 bg-gradient-to-b from-white to-[#55B02E] bg-clip-text text-center text-3xl font-bold tracking-tighter text-transparent md:text-[54px] md:leading-[60px]">
-            A more effective way to track progress
+            A melhor forma de acompanhar suas finanças
           </h2>
           <p className="mt-5 text-center text-[22px] leading-[30px] tracking-tight text-white">
             Controle suas transações com eficiência e inteligência com nossa IA

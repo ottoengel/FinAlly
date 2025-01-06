@@ -3,12 +3,13 @@
 import { CheckIcon } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const pricingTiers = [
   {
     title: "Plano Básico",
     monthlyPrice: 0,
-    buttonText: "Get started for free",
+    buttonText: "Comece grátis",
     popular: false,
     inverse: false,
     features: ["Apenas 10 transações por mês"],
@@ -27,9 +28,9 @@ const Pricing = () => {
   return (
     <section id="price" className="overflow-x-clip py-24">
       <div className="container justify-center md:mx-auto md:pl-[10px]">
-        <div className="mx-auto max-w-[540px]">
+        <div className="mx-auto max-w-[640px]">
           <h2 className="bg-gradient-to-b from-white to-[#55B02E] bg-clip-text text-center text-3xl font-bold tracking-tighter text-transparent md:text-[54px] md:leading-[60px]">
-            Pricing
+            Preço
           </h2>
           <p className="mt-5 text-center text-[20px] leading-[30px] tracking-tight text-white/70">
             Desbloqueie todo o potencial do nosso sistema! <br />
@@ -87,9 +88,11 @@ const Pricing = () => {
                     /mês
                   </span>
                 </div>
-                <button className="mt-[30px] inline-flex w-full items-center rounded-lg bg-black px-4 py-2 font-medium tracking-tight text-white">
-                  {buttonText}
-                </button>
+                <Link href="/subscription">
+                  <button className="mt-[30px] inline-flex w-full items-center rounded-lg bg-black px-4 py-2 font-medium tracking-tight text-white">
+                    {buttonText}
+                  </button>
+                </Link>
                 <ul className="mt-8 flex flex-col gap-5">
                   {features.map((feature, featureIndex) => (
                     <li
