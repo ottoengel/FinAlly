@@ -4,6 +4,7 @@ import { LogInIcon } from "lucide-react";
 import { SignInButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 const LoginPage = async () => {
   const { userId } = await auth();
@@ -14,16 +15,18 @@ const LoginPage = async () => {
   }
 
   return (
-    <div className="grid h-full grid-cols-2">
+    <div className="grid h-full grid-cols-1 sm:grid-cols-2">
       {/* ESQUERDA */}
-      <div className="mx-auto flex h-full max-w-[550px] flex-col justify-center p-8">
-        <Image
-          src="/fin-logo.svg"
-          alt="FinAlly"
-          width={173}
-          height={39}
-          className="mb-8"
-        />
+      <div className="order-2 mx-auto flex h-full max-w-[550px] flex-col gap-8 p-8 sm:order-1 sm:justify-center">
+        <Link href="/">
+          <Image
+            src="/fin-logo.svg"
+            alt="FinAlly"
+            width={173}
+            height={39}
+            className="mb-8"
+          />
+        </Link>
         <h1 className="mb-3 text-4xl font-bold">Bem-vindo</h1>
         <p className="mb-8 text-muted-foreground">
           A FinAlly é uma plataforma de gestão financeira que utiliza IA para
@@ -39,9 +42,9 @@ const LoginPage = async () => {
       </div>
 
       {/* DIREITA */}
-      <div className="relative h-full w-full">
+      <div className="relative order-1 h-full w-full sm:order-2">
         <Image
-          src="/login.png"
+          src="/logimg.png"
           alt="Faça seu login"
           fill
           className="object-cover"
