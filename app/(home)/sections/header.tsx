@@ -1,5 +1,5 @@
 import { auth } from "@clerk/nextjs/server";
-import { ArrowRight, MenuIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,7 +23,7 @@ const Header = async () => {
               height={150}
               width={150}
             />
-            <MenuIcon className="h-5 w-5 items-center md:hidden" />
+            {/* <MenuIcon className="h-5 w-5 items-center md:hidden" /> */}
             <nav className="hidden items-center gap-6 md:flex">
               <a href="#about">Sobre</a>
               <a href="#features">Features</a>
