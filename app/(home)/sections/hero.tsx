@@ -36,7 +36,7 @@ const Hero = () => {
             <div className="mt-[30px] flex items-center gap-1">
               <Link href="/login">
                 <button className="inline-flex items-center rounded-lg bg-black px-4 py-2 font-medium tracking-tight text-white">
-                  Comece Agora
+                  Acessar
                 </button>
               </Link>
               <button className="inline-flex items-center gap-1 rounded-lg bg-transparent px-4 py-2 font-medium tracking-tight text-white">
