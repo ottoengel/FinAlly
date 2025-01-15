@@ -29,7 +29,7 @@ export const createStripeCheckout = async () => {
     },
     line_items: [
       {
-        price: process.env.STRIPE_PRO_PLAN_PRICE_ID,
+        price: process.env.STRIPE_PRO_PLAN_PRICE_P_ID,
         quantity: 1,
       },
     ],
